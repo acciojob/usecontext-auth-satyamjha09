@@ -1,4 +1,5 @@
 // Auth.js
+// Auth.js
 import React, { useContext } from 'react';
 import { AuthContext } from './AuthContext';
 
@@ -15,10 +16,10 @@ const Auth = () => {
         />
         I am not a robot
       </label>
-      <p>
+      <p className="authText">
         {isAuthenticated
           ? 'You are authenticated!'
-          : 'Please verify that you are not a robot.'}
+          : 'You are not authenticated'}
       </p>
     </div>
   );
