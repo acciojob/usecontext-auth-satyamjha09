@@ -1,5 +1,3 @@
-// Auth.js
-// Auth.js
 import React, { useContext } from 'react';
 import { AuthContext } from './AuthContext';
 
@@ -18,8 +16,8 @@ const Auth = () => {
       </label>
       <p className="authText">
         {isAuthenticated
-          ? 'You are authenticated!'
-          : 'You are not authenticated'}
+          ? 'You are now authenticated, you can proceed'
+          : 'you are not authenticated'}
       </p>
     </div>
   );
