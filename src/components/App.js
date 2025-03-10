@@ -1,14 +1,16 @@
-import Auth from "./Auth";
-import { AuthProvider } from "./AuthContext";
+import React from 'react'
+import { AuthProvider } from './AuthContext'
+import Auth from './Auth'
 
 const App = () => {
   return (
     <AuthProvider>
-      <div className="flex items-center justify-center h-screen">
+      <div>
+        <h1>React Authentication with useContext</h1>
         <Auth />
       </div>
     </AuthProvider>
-  );
-};
+  )
+}
 
-export default App;
+export default App
